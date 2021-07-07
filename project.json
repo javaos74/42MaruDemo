@@ -11,11 +11,11 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.4.4.0",
-  "projectVersion": "1.0.2",
+  "projectVersion": "1.0.7",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
-    "requiresUserInteraction": false,
+    "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
       "Private:*",
