@@ -1,0 +1,200 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="899,2021" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:_="clr-namespace:_42Maru;assembly=42Maru" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="72">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>_42Maru</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="29">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>42Maru</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="806,1856" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:QueueItem" Name="q_item" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="764,1764" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+      <ui:InterruptibleDoWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="728,1597" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="stock_name" />
+            <Variable x:TypeArguments="x:Int32" Name="cur_price" />
+            <Variable x:TypeArguments="x:Int32" Name="max_price" />
+            <Variable x:TypeArguments="x:String" Name="error_message" />
+            <Variable x:TypeArguments="x:Int32" Name="min_price" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WaitQueueItem Reference="{x:Null}" TimeoutMS="{x:Null}" ContinueOnError="True" DisplayName="Wait Queue Item" FilterStrategy="StartsWith" FolderPath="42maru" sap:VirtualizedContainerService.HintSize="686,80" sap2010:WorkflowViewState.IdRef="WaitQueueItem_2" PollTimeMS="1000" QueueName="chatbot_42maru" Result="[q_item]" />
+          <If Condition="[q_item isNot Nothing]" sap:VirtualizedContainerService.HintSize="686,1385" sap2010:WorkflowViewState.IdRef="If_1">
+            <If.Then>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="650,1206" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch.Try>
+                  <Sequence sap:VirtualizedContainerService.HintSize="612,974" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="json_entities" />
+                      <Variable x:TypeArguments="x:Int32" Name="status_code" />
+                      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)[]" Name="dict_arr" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="570,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[json_entities]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[q_item.SpecificContent("entities").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="570,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[string.Format(&quot;session: {0}   scenario: {1}&quot;,  q_item.SpecificContent(&quot;session_id&quot;).ToString, q_item.SpecificContent(&quot;scenario_id&quot;).ToString)]" />
+                    <_:SendTextCallback Endpoint="http://cm-api-dev.42maru.com" sap:VirtualizedContainerService.HintSize="570,22" sap2010:WorkflowViewState.IdRef="SendTextCallback_1" ScenarioId="[q_item.SpecificContent(&quot;scenario_id&quot;).ToString]" SessionId="[q_item.SpecificContent(&quot;session_id&quot;).ToString]" StatusCode="[status_code]" TextMessages="[{&quot;요청하신 항목에 대해서 작업 중입니다. 잠시만 기다려 주세요.&quot;}]" />
+                    <ui:DeserializeJson x:TypeArguments="scg:Dictionary(x:String, x:Object)[]" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="570,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[dict_arr]" JsonString="[json_entities]" />
+                    <If Condition="[dict_arr(0)(&quot;keyword&quot;).toString.toUpper = &quot;SKT&quot;]" sap:VirtualizedContainerService.HintSize="570,219" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Then>
+                        <Assign sap:VirtualizedContainerService.HintSize="262.5,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[stock_name]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">SK텔레콤</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Then>
+                      <If.Else>
+                        <Assign sap:VirtualizedContainerService.HintSize="262.5,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[stock_name]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[dict_arr(0)("keyword").toString]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Else>
+                    </If>
+                    <ui:InvokeProcess ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Process" FolderPath="42maru" sap:VirtualizedContainerService.HintSize="570,167" sap2010:WorkflowViewState.IdRef="InvokeProcess_1" Level="Info" LogEntry="WithArguments" LogExit="WithArguments" ProcessName="StockInfo">
+                      <ui:InvokeProcess.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="StockName">[stock_name]</InArgument>
+                        <OutArgument x:TypeArguments="x:Int32" x:Key="CurPrice">[cur_price]</OutArgument>
+                        <OutArgument x:TypeArguments="x:Int32" x:Key="MaxPrice">[max_price]</OutArgument>
+                        <OutArgument x:TypeArguments="x:Int32" x:Key="MinPrice">[min_price]</OutArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="ErrorMessage">[error_message]</OutArgument>
+                      </ui:InvokeProcess.Arguments>
+                    </ui:InvokeProcess>
+                    <_:SendTextCallback Endpoint="http://cm-api-dev.42maru.com" sap:VirtualizedContainerService.HintSize="570,22" sap2010:WorkflowViewState.IdRef="SendTextCallback_2" ScenarioId="[q_item.SpecificContent(&quot;scenario_id&quot;).ToString]" SessionId="[q_item.SpecificContent(&quot;session_id&quot;).ToString]" StatusCode="[status_code]" TextMessages="[{ string.Format(&quot;요청하신 종목({0})의 현재가는 {1:#,0}원 고가는 {2:#,0}원 저가는 {3:#,0}원 입니다.&quot;, stock_name, cur_price, max_price, min_price) }]" />
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:ArgumentException" sap:VirtualizedContainerService.HintSize="616,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:ArgumentException">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:ArgumentException" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[string.Format(&quot;StockInfo: 종목명 {0}  오류 : {1}&quot;, stock_name, exception.Message)]" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+                <TryCatch.Finally>
+                  <ui:SetTransactionStatus ContinueOnError="{x:Null}" Reason="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" sap:VirtualizedContainerService.HintSize="284,80" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_1" Status="Successful" TransactionItem="[q_item]">
+                    <ui:SetTransactionStatus.Analytics>
+                      <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                    </ui:SetTransactionStatus.Analytics>
+                    <ui:SetTransactionStatus.Output>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="cur_price">[cur_price]</InArgument>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="max_price">[max_price]</InArgument>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="min_price">[min_price]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="error_message">[error_message]</InArgument>
+                    </ui:SetTransactionStatus.Output>
+                  </ui:SetTransactionStatus>
+                </TryCatch.Finally>
+              </TryCatch>
+            </If.Then>
+          </If>
+        </Sequence>
+      </ui:InterruptibleDoWhile.Body>
+      <ui:InterruptibleDoWhile.Condition>
+        <Literal x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="Literal`1_1" Value="True" />
+      </ui:InterruptibleDoWhile.Condition>
+    </ui:InterruptibleDoWhile>
+  </Sequence>
+</Activity>
